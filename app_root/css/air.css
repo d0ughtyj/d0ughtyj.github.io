@@ -1,0 +1,54 @@
+/**{
+border: 1px solid red;
+padding: 0px;
+margin: 0px;
+font-family: sans-serif;
+opacity: 1;
+}*/
+
+
+#idAir{
+  /*float: right;*/
+  /*background-color: #e6f7f0;*/
+  /*align-self: flex-start;*/
+  /*border: 2px solid black;*/
+  /*position: relative;*/
+  /*right: 0px;*/
+  /*top: 10px;*/
+  width: 650px;
+  height: 280px;
+  background-image: url("../images/clouds_in_sky.jpg");
+  padding-bottom: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  }
+#wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  border: 0px solid green;
+  width: 830px;
+  height: 400px;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.square{
+  border-radius: 4px;
+  height:4px;
+  width:4px;
+  background-color: red;
+  display: inline-block;
+  border: 0 solid grey;
+}
+
+
+/*.square{
+  display: inline-block;
+  color: yellow;
+  padding: 0px;
+  width: 4px;
+  height: 4px;
+  margin: 0;
+  border: 1px solid black;
+  opacity: .5;
+}*/
