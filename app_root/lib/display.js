@@ -15,8 +15,8 @@ var displayRotateActor = function(ang){
   var $actor = $("#idActor")
   deg = 'transform: rotate(-' + ang + 'deg)';
   console.log(deg);
-
-  $actor.css(deg);
+  //$actor.css("transform: rotate(-45deg)");
+  //$actor.css(deg);
   return;
 }
 // /******************************************/
@@ -32,7 +32,7 @@ var displayTossBall = function(){
 }
 // /******************************************/
 var displayRound = function(){
-  var num = intRoundsPlayed + 1;
+  var num = intRoundsPlayed;
   $displayStatus.text('Playing round number ' + num);
   displayScore();
   return;
@@ -57,7 +57,7 @@ var displayStatus = function(){
 }
 // /******************************************/
 var displayGameOver = function(who){
-  $displayStatus.text('Game Over, ' + intRoundsPlayed + ' Rounds played ' +who);
+  $displayStatus.text('Game Over, ' + intRoundsPlayed + ' Rounds played.   ' +who);
   $('#inputButtonNext').hide();
   $('#inputButtonNextGame').show();
   return;

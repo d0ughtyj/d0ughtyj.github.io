@@ -74,7 +74,7 @@ generateBoard();
 var NewRound = function(){
   // reset locations for next round
   intTurnNumber = 1;
-  intRoundsPlayed++;
+  //intRoundsPlayed++;
   removeBall('pallino');
   removeBall('player1');
   removeBall('player2');
@@ -82,7 +82,7 @@ var NewRound = function(){
   $('#inputButtonNext').hide();
   $('#inputButtonNextGame').hide();
   $('#inputButtonP').show();
-  // displayRound();
+  displayRound();
 }
 /******************************************/
 var toss = function(who,str){

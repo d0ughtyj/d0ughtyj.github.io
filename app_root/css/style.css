@@ -59,7 +59,7 @@ font-size: 20px;
   /*width: 4.25px;
   height: 4.25px;*/
   margin: 0;
-  /*border: .25px solid white;*/
+  border: .25px solid green;
   /*opacity: .25;*/
 }
 
@@ -74,6 +74,8 @@ header{
   font-size: 1em;
   font-family: sans-serif;
   text-align: center;
+  border-radius: 5px;
+  padding: 10px 5px 10px 5px;
 }
 
 h1{
@@ -81,6 +83,7 @@ h1{
   font-size: 1.5em;
   font-family: sans-serif;
   text-align: center;
+  border-radius: 5px;
 }
 
 h2{
@@ -88,27 +91,30 @@ h2{
   font-weight: bold;
   font-family: sans-serif;
   text-align: left;
+  border-radius: 5px;
 }
 
 body{
 }
 
 nav ul{
+  /*display: flex;*/
   background-color: #7fa4e0;
   font-size: .75em;
   font-family: sans-serif;
   text-align: center;
   list-style-type: none;
-  margin-top: 10px;
-  padding: 5px 0px 5px 0px;
-  margin: auto;
-  width: 50%;
+  margin-top: 5px;
+  padding: 5px 20px 5px 20px;
+  margin: 5px;
+  width: 300px;
   border: 2px solid white;
+  border-radius: 5px;
   /*margin: 0 0 3px 0;*/
 }
 li {
   display: inline;
-  padding: 15px 0px 15px 0px;
+  padding: 15px 5px 15px 5px;
 
 }
 
@@ -173,7 +179,7 @@ img{
   padding-top: 20px;
   margin: 10px;
   border-radius: 10px;
-
+  /*transform: rotate(-15deg);*/
 }
 
 #idAir{
