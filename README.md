@@ -1,22 +1,8 @@
 # d0ughtyj.github.io
 
-Project 1 URL
+Project 1 URL:<p>
 https://d0ughtyj.github.io/app_root/index.html
 
-Where to start:
-    Select a force of throw and angle of throw.
-    Click the 'throw Pallino' button.
-    Select a force of throw and angle of throw.
-    Click the 'Player 1 Throws' button.
-    Select a force of throw and angle of throw.
-    Click the 'Player 1 Throws' button.
-    App Scores the Round.
-    Click button for 'Next Round'
-    After 10 Rounds Games is over.
-    
-    
-    History of the App
-This App was developed in March of 2017 for the GA Web Development Class
 
 <section id="wrapper">
 <h1>How to Play the Bocce Ball App</h1>
@@ -37,8 +23,17 @@ This App was developed in March of 2017 for the GA Web Development Class
   <li>After 10 Rounds Games is over.</li>
 </ul>
 
-<section id="youTube">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/2hhN6S-1urM" frameborder="0" allowfullscreen></iframe>
-</section>
+    <hr>
+ 
+ <h1>About Bocce Ball App</h1>
+
+<h2>History of the App</h2>
+<ul>
+  <li>This App was developed in March of 2017 for the GA Web Development Class</li>
+
+</ul>
+
+
 
     <hr>
+    
