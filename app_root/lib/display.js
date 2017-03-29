@@ -8,10 +8,6 @@
   var $displayScore = $('#idScore');
 // /******************************************/
 var displayRotateActor = function(ang){
-
-// #idActor{
-// transform: rotate(-15deg);
-// $("p").css("background-color", "yellow");
   var $actor = $("#idActor");
   console.log('displayRotateActor ' + ang + ' ' + $actor);
   deg = 'transform: rotate(-' + ang + 'deg)';

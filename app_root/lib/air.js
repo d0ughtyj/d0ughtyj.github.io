@@ -1,16 +1,12 @@
 console.log('air.js loaded');
 
 $(function() {
-
-// **********************************************/
-
-
 /******************************************/
 var $air= $('#idAir');
 /******************************************/
 var generateBoard = function(grid){
   // $('.square').remove();
-  grid = 162;
+  grid = 20;
   rows = 10;
   var idValue = '';
 
@@ -18,22 +14,34 @@ var generateBoard = function(grid){
       for (var i=1; i <= grid; i++){
         var $square = $('<div>');
         idValue = ('r' + r + 'c' + i);
-        $square.attr('id',idValue)
+        $square.attr('id',idValue);
         $square.addClass('square');
         $air.append($square);
       }
   }
 }
 /******************************************/
-generateBoard();
-
-});
-
-var throwBall = function(){
-//background-color: ivory;
-$square = $("#r1c30");
-$square.css("height":"20px");
-$square.css("width":"20px");
-$square.css("color":"blue");
-
+/******************************************/
+var generateBoard2 = function(){
+  var grid = 500;
+  $('.square').remove();
+  for (var i=1; i <= grid; i++){
+    var $square = $('<div>');
+    idValue = (i);
+    $square.attr('id',idValue);
+    $square.addClass('square');
+    $air.append($square);
+  }
 }
+/******************************************/
+generateBoard2();
+});
+// ========================on load function end =================
+var throwBall = function(){
+    //background-color: ivory;
+    //var $square = $("#r1c30");
+    var $square = $("#20");
+    $square.css("height","20px");
+    $square.css("width","20px");
+    $square.css("color","blue");
+};
