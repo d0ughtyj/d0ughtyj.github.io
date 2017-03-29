@@ -52,7 +52,7 @@ var $board= $('#idBoard');
 /******************************************/
 var generateBoard = function(grid){
   // $('.square').remove();
-  grid = 100;
+  grid = 115;
   for (var i=1; i <= grid; i++){
     var $square = $('<div>');
     $square.attr('id',i)
@@ -211,13 +211,13 @@ function getForceFromStr(force){
   //arrForce.length=0;
   switch(force) {
     case "soft":
-        arrForce = [11,40];
+        arrForce = [20,50];
         break;
     case "normal":
-        arrForce = [41,70];
+        arrForce = [51,80];
         break;
     case "hard":
-        arrForce = [71,97];
+        arrForce = [81,113];
         break;
   }
 };

@@ -32,5 +32,8 @@ generateBoard();
 var throwBall = function(){
 //background-color: ivory;
 $square = $("#r1c30");
+$square.css("height":"20px");
+$square.css("width":"20px");
+$square.css("color":"blue");
 
 }

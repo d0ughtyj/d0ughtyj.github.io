@@ -8,14 +8,17 @@
   var $displayScore = $('#idScore');
 // /******************************************/
 var displayRotateActor = function(ang){
-  console.log('displayRotateActor ' + ang);
+
 // #idActor{
 // transform: rotate(-15deg);
 // $("p").css("background-color", "yellow");
-  var $actor = $("#idActor")
+  var $actor = $("#idActor");
+  console.log('displayRotateActor ' + ang + ' ' + $actor);
   deg = 'transform: rotate(-' + ang + 'deg)';
   console.log(deg);
-  //$actor.css("transform: rotate(-45deg)");
+  //$actor.css("background-color", "yellow");
+
+  $actor.css("transform", "rotate(-" + ang + "deg)");
   //$actor.css(deg);
   return;
 }
