@@ -32,8 +32,7 @@ https://d0ughtyj.github.io/app_root/index.html
   <li>This App was developed in March of 2017 for the GA Web Development Class</li>
 
 </ul>
-
-
-
-    <hr>
+<hr>
+<h2>Other Projects:</h2><br>
+https://d0ughtyj.github.io/
     
