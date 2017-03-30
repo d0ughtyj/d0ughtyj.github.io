@@ -1,9 +1,9 @@
 /**
- * filename.js
+ * apps.js
  * description
  *
  *
- * @version 0.1
+ * @version 0.8
  * @author  Jim Doughty, https://github.com/d0ughtyj/
  * @email jim.doughty.colorado@gmail.com
  * @updated
@@ -67,7 +67,7 @@ var generateBoard = function(grid){
 }
 /******************************************/
 generateBoard();
-
+//modalBump();
 });
 // ========================on load function end =================
 
@@ -102,14 +102,26 @@ var toss = function(who,str){
   // removeBall(who);
   var intSpot = getDistance($angle,$force);
 
+  // check if balls are in the same location
   switch(who) {
       case 'player1':
-        if (locationPallino == intSpot){ intSpot++}
+        if (locationPallino == intSpot){
+          intSpot++
+          console.log('there was a bump!')
+          modalBump(); // bump message
+        }
       break;
-
       case 'player2':
-        if (locationPlayer1 == intSpot){ intSpot++}
-        if (locationPallino == intSpot){ intSpot++}
+        if (locationPlayer1 == intSpot){
+          intSpot++
+          console.log('there was a bump!')
+          modalBump(); // bump message
+        }
+        if (locationPallino == intSpot){
+          intSpot++
+          console.log('there was a bump!')
+          modalBump(); // bump message
+        }
       break;
     }
 
@@ -211,6 +223,7 @@ function getForceFromStr(force){
   //arrForce.length=0;
   switch(force) {
     case "soft":
+        // arrForce = [20,24];
         arrForce = [20,50];
         break;
     case "normal":
@@ -229,7 +242,6 @@ function startOver(){
 /****************************************************************/
 function updateActor(){
   var $angle = $('#idAngle').val();
-  num =
   displayRotateActor($angle);
 };
 /****************************************************************/

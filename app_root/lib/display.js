@@ -56,6 +56,7 @@ var displayStatus = function(){
 }
 // /******************************************/
 var displayGameOver = function(who){
+  modalGameWon();
   $displayStatus.text('Game Over, ' + intRoundsPlayed + ' Rounds played.   ' +who);
   $('#inputButtonNext').hide();
   $('#inputButtonNextGame').show();

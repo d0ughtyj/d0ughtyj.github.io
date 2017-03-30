@@ -20,12 +20,15 @@ console.log('score.js loaded');
 // /******************************************/
 var checkWhoWon = function(){
   if(intScorePlayer1 == intScorePlayer2){
+
       whoWon = 'TIE';
       return whoWon;
     }else if(intScorePlayer1 > intScorePlayer2){
+
       whoWon = 'BLUE WON!';
       return whoWon;
     }else{
+
       whoWon = 'YELLOW WON!';
       return whoWon;
       }
@@ -65,6 +68,7 @@ var checkScore = function(){
       intRoundsPlayed = games;
       displayStatus();
       displayGameOver(who);
+      modalGameWon();
   }
 }
 /******************************************/

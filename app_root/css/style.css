@@ -60,7 +60,7 @@ font-size: 20px;
   height: 4.25px;*/
   margin: 0;
   border: .25px solid green;
-  /*opacity: .25;*/
+  /*opacity: 0.5;*/
 }
 
 
@@ -108,7 +108,7 @@ nav ul{
   margin-top: 5px;
   padding: 5px 20px 5px 20px;
   margin: auto;
-  width: 300px;
+  width: 450px;
   border: 2px solid white;
   border-radius: 5px;
   /*margin: 0 0 3px 0;*/
@@ -182,9 +182,14 @@ img{
   top: 10px;*/
   width: 125px;
   height: 175px;
-  background-image: url("../images/actor-body-ball.png");
+  /*background-image: url("../images/actor-body-ball.png");*/
+  background-image:
+    url("../images/person-throw-sm.png");
+  background-repeat: no-repeat;
   padding-top: 20px;
+  padding-left: 5px;
   margin: 10px;
+  margin-left: 35px;
   border-radius: 10px;
   /*transform: rotate(-15deg);*/
   z-index: 2;

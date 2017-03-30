@@ -3,25 +3,53 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/air.css">
+    <link rel="stylesheet" href="css/toss_ball.css">
+    <link rel="stylesheet" href="css/modal.css">
+
     <title>Test Ball Throw</title>
   </head>
   <body>
+  <h1>Throw Ball Testing</h1>
 
 <section id="wrapper">
-  <h1>Throw Ball Testing</h1>
-    <section id="idAir"></section>
 
-    <button id="inputButtonThrowBall" onClick="throwBall()">Throw Ball</button>
+  <section id="idActor">
+    <section id="idArms"></section>
+  </section>
+
+    <section id="idAir"></section>
 </section>
 
+
+<!-- <button id="inputButtonThrowBall" onClick="generateBoard2();">generate Board 2</button>
+<button id="inputButtonThrowBall" onClick="generateBoard3();">generate Board 3</button><br> -->
+<button id="inputButtonThrowBall" onClick="throwBall()">Throw Ball</button>
+<button id="inputButtonThrowBall" onClick="rotateArms1()">Rotate Arms 1</button>
+<button id="idButton">Bump Alert Click Event</button>
+<button id="idButton2" onClick="modalGameWon();" >Game Won Call Function</button>
+<button id="idButton2" onClick="modalBump();" >Bump Call Function</button>
+<button id="inputButtonThrowBall" onClick="startOver()">Reset Page</button>
+</section>
+
+  <!-- Trigger/Open The Modal %%%%%%%%%%%%%%%%%%%%% -->
+
+  <!-- The Modal -->
+  <div id="idModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p>Yikes you hit a ball. Bump!</p>
+    </div>
+</div>
 
 
     <script src="https://code.jquery.com/jquery-3.2.0.min.js"
     integrity="sha256-JAW99MJVpJBGcbzEuXk4Az05s/XyDdBomFqNlM3ic+I="
     crossorigin="anonymous"></script>
 
-
-    <script type="text/javascript" src="lib/air.js"></script>
-
+  <script type="text/javascript" src="lib/modal_jq.js"></script>
+  <script type="text/javascript" src="lib/toss_ball.js"></script>
+  <script type="text/javascript" src="lib/air.js"></script>
+    <!-- <script type="text/javascript" src="lib/modal.js"></script> -->
   </body>
 </html>
