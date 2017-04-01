@@ -5,6 +5,68 @@ margin: 0px;
 font-family: sans-serif;
 opacity: 1;
 }*/
+h1{
+
+font-family: sans-serif;
+background-color: #7fa4e0;
+}
+
+.ball{
+  border-radius: 15px;
+  height:15px;
+  width:15px;
+  background-color: red;
+  /*display: inline-block;*/
+  /*border: 0 solid grey;*/
+  /*transform: translate(300px,140px)*/
+}
+
+
+.square{
+  border-radius: 15px;
+  height:15px;
+  width:15px;
+  background-color: white;
+  display: inline-block;
+  border: 0 solid grey;
+}
+#idHtmlPage{
+  width: 100%;
+  overflow: scroll;
+}
+
+
+#idActor{
+  /*background-color: #e6f7f0;*/
+  border: 2px solid blue;
+  /*position: relative;
+  left: 10px;
+  top: 10px;*/
+  width: 125px;
+  height: 185px;
+  background-image:
+    url("../images/person-throw-no-ball.png");
+  background-repeat: no-repeat;
+  padding: 0;
+  /*margin: 10px;*/
+  /*border-radius: 10px;*/
+  /*transform: rotate(-15deg);*/
+  z-index: 2;
+}
+
+#idArms{
+  display: none;
+  border: 0px solid green;
+  width: 125px;
+  height: 185px;
+  background-image:
+    url("../images/actor-arms2.png");
+  /*padding-top: 20px;*/
+  transform: rotate(0deg);
+  padding-top: 0px;
+  /*z-index: 3;*/
+}
+
 
 
 #idAir{
@@ -17,7 +79,7 @@ opacity: 1;
   /*top: 10px;*/
   width: 650px;
   height: 280px;
-  background-image: url("../images/clouds_in_sky.jpg");
+  background-image: url("../images/clouds_in_sky2.jpg");
   padding-bottom: 0px;
   margin-top: 0px;
   margin-bottom: 0px;
@@ -32,11 +94,26 @@ opacity: 1;
   justify-content: center;
 }
 
+#idButtonArea{
+  display: flex;
+  flex-wrap: wrap;
+  border: 0px solid green;
+  width: 60%;
+  /*flex-direction: column;*/
+  justify-content: center;
+  margin: auto;
+}
+
+button{
+  width:140px;
+  height: 30px;
+}
+
 .square{
-  border-radius: 4px;
-  height:4px;
-  width:4px;
-  background-color: red;
+  border-radius: 15px;
+  height:15px;
+  width:15px;
+  background-color: white;
   display: inline-block;
   border: 0 solid grey;
 }

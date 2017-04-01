@@ -5,8 +5,8 @@ console.log("toss_ball.js loaded");
 function throwBall(){
     console.log('throwBall');
 
-    var x = '300px'  ;
-    var y = '15px';
+    var x = '600px'  ;
+    var y = '200px';
 
   var ball_translate = 'translate('+  x + 'px,'+y+'px)';
 
@@ -18,8 +18,8 @@ function throwBall(){
   $air.append($ball);
 
 
-  $ball.css("left", "-130px");
-  $ball.css("top", "265px");
+  $ball.css("left", "25px");
+  $ball.css("top", "184px");
   $ball.css("position", "absolute");
 
   $ball.css("background","url(images/red-ball.png) no-repeat");
@@ -29,19 +29,28 @@ function throwBall(){
   $ball.css("transition", "3s ease-in-out");
 
   setTimeout(function () {
-      $ball.css("left", x);
-      $ball.css("top", y);
-    }, 1000);
+      // $ball.css("left", x);
+      // $ball.css("top", y);
 
-    setTimeout(function () {
-        $ball.css("left", x);
-        $ball.css("top", "280px"); // down to bottom
-      }, 2000)
+    // $ball.css("-webkit-transform", "translate(600px,20px");
+    // $ball.css("-moz-transform", "translate(600px,20px");
+    // $ball.css("-ms-transform", "translate(600px,20px");
+    $ball.css("transform", "translate(400px,-100px");
 
-      // remove the ball
-      setTimeout(function () {
-        $('.ball').remove();
-      }, 4000);
+  }, 2000);
+
+  $ball.css("transition", "6s ease-in-out");
+
+  setTimeout(function () {
+      $ball.css("background","url(images/ball.png) no-repeat");
+      $ball.css("transform", "translate(700px,100px");
+
+  }, 2000)
+
+      // // remove the ball
+      // setTimeout(function () {
+      //   $('.ball').remove();
+      // }, 4000);
 
 
     // $ball.css("-webkit-transform", "translate(400px,-50px)");

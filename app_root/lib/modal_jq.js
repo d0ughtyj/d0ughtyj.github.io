@@ -47,3 +47,16 @@ var modalBump = function(){
   $('P').text("Yikes you hit a ball. Bump!");
   return;
 }
+/***********************************************/
+var loadHowTo = function(){
+  console.log( 'loadHowTo fired' );
+  // var $modal = $('#idModal');
+  // $modal.css("display", "block");
+  document.getElementById("idAir").innerHTML='<object type="text/html" data="rules.html" ></object>';
+  return false;
+}
+/***********************************************/
+// function loadHowTo1() {
+//
+//      document.getElementById("idHtmlPages").innerHTML='<object type="text/html" data="how_to_play.html" ></object>';
+// }
