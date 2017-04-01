@@ -1,9 +1,9 @@
 /**
- * apps.js
+ * filename.js
  * description
  *
  *
- * @version 0.8
+ * @version 0.1
  * @author  Jim Doughty, https://github.com/d0ughtyj/
  * @email jim.doughty.colorado@gmail.com
  * @updated
@@ -52,7 +52,7 @@ var $board= $('#idBoard');
 /******************************************/
 var generateBoard = function(grid){
   // $('.square').remove();
-  grid = 115;
+  grid = 100;
   for (var i=1; i <= grid; i++){
     var $square = $('<div>');
     $square.attr('id',i)
@@ -67,14 +67,14 @@ var generateBoard = function(grid){
 }
 /******************************************/
 generateBoard();
-//modalBump();
+
 });
 // ========================on load function end =================
 
 var NewRound = function(){
   // reset locations for next round
   intTurnNumber = 1;
-  //intRoundsPlayed++;
+  intRoundsPlayed++;
   removeBall('pallino');
   removeBall('player1');
   removeBall('player2');
@@ -82,7 +82,7 @@ var NewRound = function(){
   $('#inputButtonNext').hide();
   $('#inputButtonNextGame').hide();
   $('#inputButtonP').show();
-  displayRound();
+  // displayRound();
 }
 /******************************************/
 var toss = function(who,str){
@@ -102,26 +102,14 @@ var toss = function(who,str){
   // removeBall(who);
   var intSpot = getDistance($angle,$force);
 
-  // check if balls are in the same location
   switch(who) {
       case 'player1':
-        if (locationPallino == intSpot){
-          intSpot++
-          console.log('there was a bump!')
-          modalBump(); // bump message
-        }
+        if (locationPallino == intSpot){ intSpot++}
       break;
+
       case 'player2':
-        if (locationPlayer1 == intSpot){
-          intSpot++
-          console.log('there was a bump!')
-          modalBump(); // bump message
-        }
-        if (locationPallino == intSpot){
-          intSpot++
-          console.log('there was a bump!')
-          modalBump(); // bump message
-        }
+        if (locationPlayer1 == intSpot){ intSpot++}
+        if (locationPallino == intSpot){ intSpot++}
       break;
     }
 
@@ -223,14 +211,13 @@ function getForceFromStr(force){
   //arrForce.length=0;
   switch(force) {
     case "soft":
-        // arrForce = [20,24];
-        arrForce = [20,50];
+        arrForce = [11,40];
         break;
     case "normal":
-        arrForce = [51,80];
+        arrForce = [41,70];
         break;
     case "hard":
-        arrForce = [81,113];
+        arrForce = [71,97];
         break;
   }
 };
@@ -242,6 +229,7 @@ function startOver(){
 /****************************************************************/
 function updateActor(){
   var $angle = $('#idAngle').val();
+  num =
   displayRotateActor($angle);
 };
 /****************************************************************/
