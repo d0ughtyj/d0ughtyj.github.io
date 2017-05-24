@@ -1,0 +1,16 @@
+#wrapper{
+  width: auto;
+  width: 80%;
+  display: block;
+  background: grey;
+  border: 1px solid blue;
+
+}
+
+#idStatus, #idSection1{
+    width: auto;
+    width: 80%;
+    display: inline-block;
+    background: grey;
+    border: 1px solid black;
+}

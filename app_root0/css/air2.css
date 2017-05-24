@@ -1,0 +1,76 @@
+h1{
+  background-color: #7fa4e0;
+  font-size: 1.5em;
+  font-family: sans-serif;
+  text-align: center;
+  border-radius: 5px;
+}
+.old_ball{
+  border-radius: 15px;
+  height:15px;
+  width:15px;
+  background-color: red;
+  display: inline-block;
+  border: 0 solid grey;
+  transform: translate(300px,140px)
+}
+#idAir{
+  /*float: right;*/
+  /*background-color: #e6f7f0;*/
+  /*align-self: flex-start;*/
+  /*border: 2px solid black;*/
+  /*position: relative;*/
+  /*right: 0px;*/
+  /*top: 10px;*/
+  width: 650px;
+  height: 280px;
+  background-image: url("../images/clouds_in_sky2.jpg");
+  padding-bottom: 0px;
+  margin: auto;
+  }
+#wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  border: 0px solid green;
+  width: 830px;
+  height: 400px;
+  flex-direction: column;
+  justify-content: center;
+}
+#idInputArea{
+margin: 10px;
+padding: 10px:
+width: 70%;
+margin: auto;
+}
+.square{
+  border-radius: 15px;
+  height:15px;
+  width:15px;
+  background-color: white;
+  display: inline-block;
+  border: 0 solid grey;
+}
+.test {
+  position: absolute;
+  border-radius: 20px;
+  background: blue;
+  width: 20px;
+  height: 20px;
+  top: 340px;
+  transition: all 2s linear;
+}
+.moved {
+  margin-top: -100px;
+  margin-left: 200px;
+  background: green;
+  transition: all 1s linear;
+}
+
+
+.movedBottom {
+  margin-top: 5px;
+  margin-left: 400px;
+  background: red;
+  transition: all 1s linear;
+}

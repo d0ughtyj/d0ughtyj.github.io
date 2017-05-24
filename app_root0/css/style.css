@@ -1,0 +1,272 @@
+/**
+ * filename.js
+ * description
+ *
+ *
+ * @version 0.1
+ * @author  Jim Doughty, https://github.com/d0ughtyj/
+ * @email jim.doughty.colorado@gmail.com
+ * @updated
+ * @link
+ *
+ ***************************************************************
+ */
+
+
+/**{
+border: 1px solid red;
+padding: 0px;
+margin: 0px;
+font-family: sans-serif;
+opacity: 1;
+}*/
+
+
+
+.pallino{
+/*color: red;*/
+border: 1px solid red;
+background-color: red;
+border-radius: 10px;
+width: 10px;
+height: 10px;
+font-size: 20px;
+}
+
+.player1{
+/*color: red;*/
+border: 1px solid blue;
+background-color: blue;
+border-radius: 20px;
+width:  20px;
+height: 20px;
+font-size: 20px;
+}
+
+.player2{
+/*color: red;*/
+border: 1px solid yellow;
+background-color: yellow;
+border-radius: 20px;
+width: 20px;
+height: 20px;
+font-size: 20px;
+}
+
+.square{
+  display: inline-block;
+  padding: 2px;
+  /*width: 4.25px;
+  height: 4.25px;*/
+  margin: 0;
+  border: .25px solid green;
+  /*opacity: 0.5;*/
+}
+
+
+button{
+  width: 125px;
+  height: 30px;
+}
+
+header{
+  background-color: grey;
+  font-size: 1em;
+  font-family: sans-serif;
+  text-align: center;
+  border-radius: 5px;
+  padding: 10px 5px 10px 5px;
+}
+
+h1{
+  background-color: #7fa4e0;
+  font-size: 1.5em;
+  font-family: sans-serif;
+  text-align: center;
+  border-radius: 5px;
+}
+
+h2{
+  font-size: 12px;
+  font-weight: bold;
+  font-family: sans-serif;
+  text-align: left;
+  border-radius: 5px;
+}
+
+body{
+}
+
+nav ul{
+  /*display: flex;*/
+
+  background-color: #7fa4e0;
+  font-size: .75em;
+  font-family: sans-serif;
+  text-align: center;
+  list-style-type: none;
+  margin-top: 5px;
+  padding: 5px 20px 5px 20px;
+  margin: auto;
+  width: 450px;
+  border: 2px solid white;
+  border-radius: 5px;
+  /*margin: 0 0 3px 0;*/
+}
+li {
+  display: inline;
+  padding: 15px 5px 15px 5px;
+}
+
+/*li:hover{
+background-color: grey;
+
+}*/
+
+
+
+footer{
+  background-color: #cfdef7;
+  margin: auto;
+  width: 50%;
+  border: 2px solid grey;
+  padding: 5px;
+}
+
+img{
+  width: 50%;
+}
+
+
+
+#wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  border: 0px solid green;
+  width: 830px;
+  height: 400px;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#idStatusWrapper{
+  display: flex;
+  flex-wrap: wrap;
+  border: 0px solid green;
+  width: 830px;
+  height: 30px;
+  flex-direction:column;
+}
+
+#idConfig{
+  padding-top: 10px;
+  background-color: #7fa4e0;
+  /*border: 2px solid green;*/
+  /*position: relative;
+  left: 10px;
+  top: 10px;*/
+  width: 135px;
+  height: 150px;
+  margin: 5px;
+  font-family: sans-serif;
+  font-size: 12px;
+  border-radius: 10px;
+  padding: 10px 5px 10px 5px;
+}
+
+#idActor{
+  /*background-color: #e6f7f0;*/
+  /*border: 2px solid blue;*/
+  /*position: relative;
+  left: 10px;
+  top: 10px;*/
+  width: 125px;
+  height: 175px;
+  /*background-image: url("../images/actor-body-ball.png");*/
+  background-image:
+    url("../images/person-throw-sm.png");
+  background-repeat: no-repeat;
+  padding-top: 20px;
+  padding-left: 5px;
+  margin: 10px;
+  margin-left: 35px;
+  border-radius: 10px;
+  /*transform: rotate(-15deg);*/
+  z-index: 2;
+}
+
+#idAir{
+  /*float: right;*/
+  /*background-color: #e6f7f0;*/
+  /*align-self: flex-start;*/
+  /*border: 2px solid black;*/
+  /*position: relative;*/
+  /*right: 0px;*/
+  /*top: 10px;*/
+  width: 650px;
+  height: 280px;
+  background-image: url("../images/clouds_in_sky2.jpg");
+  padding-bottom: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius: 10px;
+}
+
+#idBoard{
+  /*float: right;*/
+  /*background-color: #e6f7f0;*/
+  /*align-self: flex-end;*/
+  border: 2px solid black;
+  /*position: relative;*/
+  /*right: 0px;*/
+  /*top: 10px;*/
+  width: 650px;
+  height: 60px;
+  background-image: url("../images/grass.jpeg");
+  padding-top: 20px;
+  border-radius: 10px;
+}
+#idStatus{
+  /*float: right;*/
+  background-color: #7fa4e0;
+  border: 2px solid black;
+  position: relative;
+  /*right: 0px;
+  top: 100px;*/
+  width: 500px;
+  height: 30px;
+  padding: 2px;
+  font-family: sans-serif;
+  font-size: 14px;
+  border-radius: 5px;
+  padding-top: 5px;
+  padding-left: 10px;
+  margin-right: 5px;
+}
+
+#idScore{
+  /*float: right;*/
+  background-color: #013ea0;
+  border: 2px solid black;
+  position: relative;
+  /*right: 0px;
+  top: 100px;*/
+  width: 320px;
+  height: 30px;
+  color: white;
+  padding: 2px;
+  padding-top: 5px;
+  padding-left: 10px;
+  font-family: sans-serif;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+#mainImg{
+  background-color: #e6f7f0;
+}
+
+#secondImg{
+  width: 50%;
+  background-color: #eff2d2;
+}
