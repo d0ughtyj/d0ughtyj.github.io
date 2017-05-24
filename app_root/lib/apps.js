@@ -1,9 +1,9 @@
 /**
- * filename.js
+ * apps.js
  * description
  *
  *
- * @version 0.1
+ * @version 0.8
  * @author  Jim Doughty, https://github.com/d0ughtyj/
  * @email jim.doughty.colorado@gmail.com
  * @updated
@@ -41,6 +41,7 @@ $(function() {
   var $myButton2 = $('#inputButtonP1');
   var $myButton3 = $('#inputButtonP2');
 
+  // buttons for user to play game
   $('#inputButtonP').show();
   $('#inputButtonNext').hide();
   $('#inputButtonP1').hide();
@@ -50,9 +51,10 @@ $(function() {
 /******************************************/
 var $board= $('#idBoard');
 /******************************************/
+// grid to throw balls onto
 var generateBoard = function(grid){
   // $('.square').remove();
-  grid = 100;
+  grid = 115;
   for (var i=1; i <= grid; i++){
     var $square = $('<div>');
     $square.attr('id',i)
@@ -67,14 +69,15 @@ var generateBoard = function(grid){
 }
 /******************************************/
 generateBoard();
-
+//modalBump();
 });
 // ========================on load function end =================
 
+// function used for next round click
 var NewRound = function(){
   // reset locations for next round
   intTurnNumber = 1;
-  intRoundsPlayed++;
+  //intRoundsPlayed++;
   removeBall('pallino');
   removeBall('player1');
   removeBall('player2');
@@ -82,9 +85,15 @@ var NewRound = function(){
   $('#inputButtonNext').hide();
   $('#inputButtonNextGame').hide();
   $('#inputButtonP').show();
-  // displayRound();
+  displayRound();
 }
 /******************************************/
+/**
+ * toss ball on to board / grid.
+ * @param {string} who player name.
+ * @param {string} str player code letters.
+ * @returns new <div> in grid
+ */
 var toss = function(who,str){
   //who,str
   // var intSpot = "3";
@@ -102,17 +111,30 @@ var toss = function(who,str){
   // removeBall(who);
   var intSpot = getDistance($angle,$force);
 
+  // check if balls are in the same location
   switch(who) {
       case 'player1':
-        if (locationPallino == intSpot){ intSpot++}
+        if (locationPallino == intSpot){
+          intSpot++
+          console.log('there was a bump!')
+          modalBump(); // bump message
+        }
       break;
-
       case 'player2':
-        if (locationPlayer1 == intSpot){ intSpot++}
-        if (locationPallino == intSpot){ intSpot++}
+        if (locationPlayer1 == intSpot){
+          intSpot++
+          console.log('there was a bump!')
+          modalBump(); // bump message
+        }
+        if (locationPallino == intSpot){
+          intSpot++
+          console.log('there was a bump!')
+          modalBump(); // bump message
+        }
       break;
     }
 
+  // call function to store location
   storeBallLocation(who, intSpot);
   var idSpot = "#" + intSpot;
   var $square = $(idSpot);
@@ -145,7 +167,9 @@ var toss = function(who,str){
 
 };
 // /******************************************/
+
 var storeBallLocation = function(who,idSpot){
+  console.log('storeBallLocation');
   //var $square = $(idSpot);
   switch(who) {
       case "pallino":
@@ -163,6 +187,7 @@ var storeBallLocation = function(who,idSpot){
     }
 };
 /******************************************/
+// remove ball before next throw / toss
 var removeBall = function(who){
   //console.log('remove ball ' + who)
   switch(who) {
@@ -193,31 +218,34 @@ var removeBall = function(who){
   }
 };
 /****************************************************************/
+// how far to place balls
 function getDistance(ang,force){
-  console.log('force: ' + force)
+  //console.log('force: ' + force)
   getForceFromStr(force);
-  console.log('arrForce: ' + arrForce);
+  // console.log('arrForce: ' + arrForce);
   ang = Number(ang);
   // Math.cos(x)
   var distance2 = getRandomIntMinMax(arrForce[0],arrForce[1]);
   var distance = (Math.cos(ang) * distance2).toFixed(0);
-  console.log('ang: ' + ang + ' distance: ' + distance + ' distance2: ' + distance2);
+  //console.log('ang: ' + ang + ' distance: ' + distance + ' distance2: ' + distance2);
   distance = Math.abs(distance);
-  console.log('distance: ' + distance)
+  //console.log('distance: ' + distance)
   return distance;
 };
 /****************************************************************/
+// determine array to use for ball grouping
 function getForceFromStr(force){
   //arrForce.length=0;
   switch(force) {
     case "soft":
-        arrForce = [11,40];
+        // arrForce = [20,24];
+        arrForce = [30,50];
         break;
     case "normal":
-        arrForce = [41,70];
+        arrForce = [51,89];
         break;
     case "hard":
-        arrForce = [71,97];
+        arrForce = [90,113];
         break;
   }
 };
@@ -227,16 +255,18 @@ function startOver(){
   location.reload();
 };
 /****************************************************************/
+// image rotate for angle selected
 function updateActor(){
   var $angle = $('#idAngle').val();
-  num =
   displayRotateActor($angle);
 };
 /****************************************************************/
+// random numbers for distance
 function getRandomInt(max) {
 Math.floor(Math.random() * 100) + 1;
 };
 /****************************************************************/
+// random numbers for distance
 function getRandomIntMinMax(min, max) {
     return Math.floor(Math.random() * (max - min) ) + min;
 };

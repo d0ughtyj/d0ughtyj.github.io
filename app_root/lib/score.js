@@ -19,19 +19,20 @@ console.log('score.js loaded');
 
 // /******************************************/
 var checkWhoWon = function(){
-  // if(intScorePlayer1 == intScorePlayer2){
-  //   whoWon = 'TIE';
-  //   return;
-  // }else if{
-  //   if(intScorePlayer1 > intScorePlayer2){
-  //     whoWon = 'BLUE WON';
-  //     return;
-  //       }else{
-  //         whoWon = 'YELLOW WON';
-  //         return;
-  //         }
-  //     }
-}
+  if(intScorePlayer1 == intScorePlayer2){
+
+      whoWon = 'TIE';
+      return whoWon;
+    }else if(intScorePlayer1 > intScorePlayer2){
+
+      whoWon = 'BLUE WON!';
+      return whoWon;
+    }else{
+
+      whoWon = 'YELLOW WON!';
+      return whoWon;
+      }
+    }
 // /******************************************/
 
 /******************************************/
@@ -51,19 +52,23 @@ var checkScore = function(){
     if (numP1 <= numP2){
         //blue
         intScorePlayer1++
+        intRoundsPlayed++;
       }else{
       // yellow
         intScorePlayer2++
+        intRoundsPlayed++
     }
   var games = intScorePlayer1 + intScorePlayer2;
   displayScore();
   displayStatus();
+
   console.log('intRoundsPlayed:' + intRoundsPlayed + ' games: ' + games) ;
-  if (intRoundsPlayed == 10){
+  if (games == 10){
       var who = checkWhoWon();
       intRoundsPlayed = games;
       displayStatus();
       displayGameOver(who);
+      modalGameWon();
   }
 }
 /******************************************/

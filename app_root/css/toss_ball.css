@@ -1,0 +1,23 @@
+#idAir {
+  width: 650px;
+  height: 280px;
+  background-image: url("../images/clouds_in_sky2.jpg");
+  padding-bottom: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+#ball2 {
+  visibility: visible;
+  /*position: absolute;*/
+  left: 10px;
+  bottom: 280px;
+  width: 15px;
+  height: 15px;
+  background: url("../images/red-ball.png") no-repeat;
+
+  -webkit-transition: 2s ease-in-out;
+  -moz-transition: 2s ease-in-out;
+  -o-transition: 2s ease-in-out;
+  transition: 2s ease-in-out;
+}
