@@ -1,0 +1,80 @@
+body{
+
+}
+h1{
+  font-family: 'Francois One', sans-serif;
+}
+
+img {
+    width: 25%;
+    height: auto;
+}
+
+#navcontainer ol{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+}
+
+.center {
+     float: none;
+     margin-left: auto;
+     margin-right: auto;
+}
+
+
+#navcontainer ol li {
+  display: inline;
+  margin-left: auto;
+}
+
+.container{
+margin:auto;
+padding: 2%;
+
+}
+
+.clsTabPage{
+  margin-left: 1em;
+}
+
+.clsFish{
+  border:4px solid #2387B9;
+  overflow-y:hidden;
+  overflow-x:scroll;
+  height:300px;
+  width: 75%;
+  margin: auto;
+  border-radius: 10px;
+}
+
+.clsThumbNail{
+  max-height: 165px;
+  max-width: 165px;
+  width: 300px;
+  height: 300px;
+
+}
+
+header{
+  background-color: lightgrey;
+  padding: .25em;
+  border-radius: .5em;
+  margin: auto;
+  text-align: center;
+}
+main{
+  margin: auto;
+  padding: 5px;
+background: white;
+
+}
+
+footer{
+  height:2px;
+  background: lightgrey;
+  padding: 2px;
+  width: 75%;
+  margin: auto;
+}
