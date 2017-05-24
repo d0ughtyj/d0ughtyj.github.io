@@ -1,0 +1,43 @@
+h1{
+  background-color: #cfdef7;
+  font-size: 1.5em;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+h2{
+  font-size: 1.25em;
+  font-family: sans-serif;
+  text-align: left;
+  font-weight: bold;
+  margin: 40px;
+  padding: 10px;
+}
+
+p {
+  font-size: 1em;
+  font-family: sans-serif;
+  text-align: left;
+  margin: 0px 40px 0px 40px;
+  padding: 2px;
+}
+
+hr{
+  width: 75%;
+  height: 4px;
+  border: 1px solid black;
+
+}
+
+li{
+  font-size: 1em;
+  font-family: sans-serif;
+  text-align: left;
+}
+
+#wrapper{
+  
+  border: 0px solid grey;
+  width: 830px;
+
+}
