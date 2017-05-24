@@ -3,6 +3,12 @@
   <head>
     <meta charset="utf-8">
     <!-- Latest compiled and minified CSS -->
+
+    <!--- image slide show -->
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <!-- https://www.w3schools.com/w3css/w3css_slideshow.asp --->
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
@@ -12,13 +18,22 @@
 <link href="https://fonts.googleapis.com/css?family=Francois+One" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <script src="./bin/app.js"></script>
+
+    <!-- slide show -->
+    <!-- <script src="./bin/slide_show.js"></script>
+    <link rel="stylesheet" href="./css/slide_show.css"> -->
+
+
+<!--- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+
+
     <title>Portfolio of Jim Doughty Colorado</title>
   </head>
   <body>
 <head>
 </head>
 
-<div class="container">
+<div class="clsContainer">
 <header>
 <h1>Portfolio of Jim Doughty Colorado</h1>
 </header>
@@ -49,6 +64,7 @@
           <li>13 NH 4000 footers left to climb</li>
         </ul>
         <img src="images/family-sm.jpg" />
+        <caption align="bottom">The Family</caption>
       </p>
     </div>
   </div>
@@ -58,12 +74,22 @@
           <h3>Web Development</h3>
           <ul>
           <li><a href="https://d0ughtyj.github.io/#">Some Projects</a></li>
+
+          <li><a href="https://d0ughtyj.github.io/app_root-new/index.html">Bocce Ball Game</a></li>
+          <li><a href="https://d0ughtyj.github.io/tic_tac_toe/index.html">Some Projects</a></li>
+          <li><a href="https://ancient-coast-54937.herokuapp.com/gallery">Handsets 411</a></li>
+          <li><a href="https://beerswall99.herokuapp.com/">Beer App</a></li>
+
           <li><a href="https://d0ughtyj.github.io/app_root/index.html">Bocce Ball Game</a></li>
           <li><a href="https://d0ughtyj.github.io/tic_tac_toe/index.html">Some Projects</a></li>
           <li><a href="#">Beer App</a></li>
+
           <li><a href="#">Events</a></li>
-          <li><a href="#">Maps</a></li>
+          <li><a href="https://beerswall99.herokuapp.com/maps/map_slider.html">Brewery Locations By Review Ratings</a></li>
+          <li><a href="https://beerswall99.herokuapp.com/maps/map_heat.html">Heat Map for Brewery Locations</a></li>
+
           <li><a href="#">Final Project</a></li>
+          <li><a href="https://d0ughtyj.github.io/portfolio/index.html">Temp</a></li>
         </ul>
       <!-- <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> -->
     </div>
@@ -94,15 +120,71 @@
 
     <div id="menu4" class="tab-pane fade">
       <div class="clsTabPage">
-      <h3>Some Big Fish I have Caught</h3>
+
+
+<h3>Some Big Fish I have Caught</h3>
       <div class="clsFish">
         <img src="images/fish1.jpg" width="300" height="300" class="clsThumbNail"/>
         <img src="images/fish2.jpg" width="300" height="300" class="clsThumbNail"/>
         <img src="images/fish3.jpg" width="300" height="300" class="clsThumbNail"/>
-        <img src="images/fish4.jpg" width="300" height="300" class="clsThumbNail"/>
+        <img src="images/fish4.png" width="300" height="300" class="clsThumbNail"/>
         <img src="images/fish5.jpg" width="300" height="300" class="clsThumbNail"/>
         <img src="images/fish6.jpg" width="300" height="300" class="clsThumbNail"/>
       </div>
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!-- <div class="slideshow-container">
+<div class="mySlides fade">
+<div class="numbertext">1 / 6</div>
+<img src="images/fish1.jpg" style="width:100%">
+<div class="text">Rio Grande Cutthroat Trout (Colorado)</div>
+</div>
+
+<div class="mySlides fade">
+<div class="numbertext">2 / 6</div>
+<img src="images/fish2.jpg" style="width:100%">
+<div class="text">Bonefish (Mexico)</div>
+</div>
+
+<div class="mySlides fade">
+<div class="numbertext">3 / 6</div>
+<img src="images/fish3.jpg" style="width:100%">
+<div class="text">Jackfish (Costa Rica)</div>
+</div>
+
+<div class="mySlides fade">
+<div class="numbertext">4 / 6</div>
+<img src="images/fish4.jpg" style="width:100%">
+<div class="text">Rainbow Trout (Colorado)</div>
+</div>
+
+<div class="mySlides fade">
+<div class="numbertext">5 / 6</div>
+<img src="images/fish5.jpg" style="width:100%">
+<div class="text">Rainbow Trout (Colorado)</div>
+</div>
+
+<div class="mySlides fade">
+<div class="numbertext">6 / 6</div>
+<img src="images/fish6.jpg" style="width:100%">
+<div class="text">Largemouth Bass (New Hampshire)</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<div style="text-align:center">
+<span class="dot" onclick="currentSlide(1)"></span>
+<span class="dot" onclick="currentSlide(2)"></span>
+<span class="dot" onclick="currentSlide(3)"></span>
+<span class="dot" onclick="currentSlide(4)"></span>
+<span class="dot" onclick="currentSlide(5)"></span>
+<span class="dot" onclick="currentSlide(6)"></span>
+</div> -->
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
     </div>
     </div>
   </div>
@@ -113,11 +195,10 @@
 <aside>
 </aside>
 <footer>
-</footer>
 
-<div class="navbar navbar-fixed-bottom">
-<div class="container">
-<!-- <a href="#" class="navbar-brand">Title</a> -->
+
+<div class="navbar navbar-bottom">
+  <div class="wrap text-center">
   <ul class="nav navbar-nav">
     <li><a href="#" >&copy; 2017 Jim Doughty, Inc.</a></li>
     <li><a href="#" >Terms</a></li>
@@ -126,6 +207,6 @@
   </ul>
 </div>
 </div>
-
+</footer>
   </body>
 </html>

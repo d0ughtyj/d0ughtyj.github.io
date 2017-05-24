@@ -29,7 +29,7 @@ img {
   margin-left: auto;
 }
 
-.container{
+.clsContainer{
 margin:auto;
 padding: 2%;
 
@@ -43,8 +43,9 @@ padding: 2%;
   border:4px solid #2387B9;
   overflow-y:hidden;
   overflow-x:scroll;
-  height:300px;
-  width: 75%;
+  overflow: scroll;
+  height:200px;
+  width: 50%;
   margin: auto;
   border-radius: 10px;
 }
@@ -70,6 +71,20 @@ main{
 background: white;
 
 }
+
+old_footer{
+    position: fixed;
+    width: 75%;
+    height: 25px;
+    bottom: 0;
+    z-index: 6;
+    background: lightgrey;
+}
+old_footer .wrap{
+    margin: 10px auto;
+
+}
+
 
 footer{
   height:2px;
