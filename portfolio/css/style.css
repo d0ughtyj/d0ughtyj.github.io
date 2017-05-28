@@ -1,6 +1,19 @@
 body{
-
+ border: .25em solid black;
+ margin: 1%;
+ border-radius: 5px;
+ padding: 1%;
+ padding-bottom: 2%;
 }
+
+.col{
+  border: 1px solid red;
+}
+
+.row{
+  border: 1px solid blue;
+}
+
 h1{
   font-family: 'Francois One', sans-serif;
 }
@@ -11,9 +24,18 @@ img {
 }
 
 .clsSlick{
-  
+
 }
 
+.navbar-nav {
+  text-align:center;
+  float:none;
+}
+  .navbar-nav li {
+      display:inline-block;
+      float:none;
+
+  }
 
 #navcontainer ol{
   margin: 0;
