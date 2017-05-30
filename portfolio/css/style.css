@@ -6,11 +6,11 @@ body{
  padding-bottom: 2%;
 }
 
-.col{
+.not-used-col{
   border: 1px solid red;
 }
 
-.row{
+.not-used-row{
   border: 1px solid blue;
 }
 
